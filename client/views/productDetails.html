@@ -1,0 +1,28 @@
+		
+			<div class="wrapper">
+	<header class="mainheader_logo">
+		<img src="images/s4.png">
+	</header>
+<div ng-show="'{{producta.phase}}'=='ideation'">
+   <progress id="progressBar" value="25" max="100"></progress>
+<p>Ideation completed</p>
+            </div>
+			<div ng-show="'{{producta.phase}}'=='pre-build'">
+   <progress id="progressBar" value="50" max="100"></progress>
+<p>Pre-build completed</p>
+            </div><div ng-show="'{{producta.phase}}'=='build'">
+   <progress id="progressBar" value="75" max="100"></progress>
+<p>Build completed</p>
+            </div><div ng-show="'{{producta.phase}}'=='release'">
+   <progress id="progressBar" value="100" max="100"></progress>
+<p>Release completed</p>
+            </div>
+
+<div class="display">
+			<p>Name: {{producta.pName}}</p>
+			<p>Team: {{producta.tName}}</p>
+			<p>Assets received date: {{producta.date1}}</p>
+			<p>Sign Off Date: {{producta.date2}}</p>
+		<div id="card_name"><p> Phase: {{producta.phase}}</p></div>
+          </div>		
+		

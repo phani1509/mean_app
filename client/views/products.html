@@ -1,0 +1,50 @@
+<div class="wrapper">
+	<header class="mainheader_logo">
+		<img src="images/s4.png">
+	</header>
+
+		<div class="contentPage2">
+			<header>
+				<p>{{param}}</p>
+			</header>
+			<div class="menu">
+				<div id="prod">
+					<p>Products</p>
+				</div>
+				<div id="books">
+					<p>Books</p>
+				</div>
+			</div>
+			<div id="list_prod"> 
+				
+			<!--	<p><a href="#/status">Product1 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Product2 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Product3 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Product4 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Product5 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Product6 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Product7 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Product8 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>-->
+				
+			
+          <li ng-repeat="product in products">
+            <p>{{product.pName}}<button type="submit" ng-click="viewProduct(product)">View</button><button type="submit" ng-click="editProduct(product)">Edit</button><button type="submit" ng-click="deleteProduct(product)">Delete</button></p>
+          </li>
+       	</div>
+			<div id="list_book"> 
+				<p><a href="#/status">Book1 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Book2 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Book3 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Book4 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Book5 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Book6 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Book7 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+				<p><a href="#/status">Book8 </a><a href="#/edit"><img src="images/edit.png" class="edit"></a></p>
+			</div>
+			<div align="center" class="add" >
+				<a href="#/addNewProduct"><button class="prod_button">Add Product</button></a>
+				<!--<a href="#/edit"><button class="book_button">Add Book</button></a>-->
+			</div>
+		</div>
+
+</div>

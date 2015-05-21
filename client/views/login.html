@@ -1,0 +1,33 @@
+
+
+<div class="wrapper" ng-controller="LoginCtrl">
+	<header class="mainheader_main">
+		<img src="images/s3_old.png" height="100%" width="100%" />
+	</header>
+	
+	
+	<form class="form" id="form_login">
+      
+      <p class="username">
+        <input name="name" type="text" class="feedback-input" placeholder="Email ID" id="username" ng-model="user.username" />
+      </p>
+      
+      <p class="password">
+        <input name="password" type="password" class="feedback-input" id="password" placeholder="Password" ng-model="user.password"/>
+      </p>
+
+	  <div class="invalid_user">{{errmsg}}</div>
+      <div class="submit">
+        <button type="submit" id="button-blue" ng-click="login(user)">Login</button>
+      </div>
+	  
+	  <div class="submit">
+        <a href="#/register"><button type="submit" id="button-blue">Signup</button></a>
+      </div>
+    </form>	
+	
+	<footer class="mainFooter">
+		<p>Copyright &copy; 2015 <a href="#" title="proctus">proctus.com</a></p>
+	</footer>
+
+</div>	

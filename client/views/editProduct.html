@@ -1,0 +1,30 @@
+<div class="wrapper" >
+	<header class="mainheader">
+		<img src="images/s4.png">
+	</header>
+
+		<div class="content" ng-controller="productsController">
+		<form name="loginForm" id="updateForm" ng-submit="createProduct()">
+		<div class="middle"><label for="name">Product Name:</label><input type="text" name="pName" class="input_style_reg" ng-model="product1.pName"/></div>
+		<div class="middle"><label for="team">Team Name:</label><input type="text" name="tName" class="input_style_reg"ng-model="product1.tName"/></div>
+		<div class="middle"><label for="assets">Assets Recieved:</label><input type="date" name="date1" class="input_style_reg" ng-model="product1.date1"/></div>
+		<div class="middle"><label for="sign-off">Sign-Off Date:</label><input type="date" name="date2" class="input_style_reg" ng-model="product1.date2"/></div>
+		<div class="middle"><label for="assets">Phase:</label><select class="ddl" ng-model="product1.phase"/>
+  <option value="select">Select</option>
+  <option value="ideation">Ideation</option>
+  <option value="pre-build">Pre-build</option>
+  <option value="build">Build</option>
+  <option value="uat">UAT</option>
+  <option value="release">Release</option>
+</select></div>
+		
+		
+	<div class="Register">
+         <button type="submit" class="button_1" ng-click="updateProduct(product1)">Update</button>	
+    </div>
+	</form>	
+
+	</div>
+
+
+</div>

@@ -1,0 +1,31 @@
+<div class="wrapper" >
+
+<div ng-controller="homeCtrl">
+	<header class="mainheader">
+		<img src="images/s4.png">
+		 <span ng-show="!currentUser">
+		 Please <a href="#/login">Login!</a> 
+		 </span>
+		
+		
+	</header>
+</div>
+
+		<div class="content_main" ng-controller="productsController">
+		
+			<a href="#/products/?tName=WHC"><div id="box1"></div></a>
+			<a href="#/products/?tName=MAGNUM"><div id="box2"></div></a>
+			<a href="#/products/?tName=CNS"><div id="box3"></div></a>
+			<a href="#/products/?tName=RESPI"><div id="box4"></div></a>
+			<a href="#/products/?tName=PAIN"><div id="box5"></div></a>
+		
+		</div>
+		
+		<footer class="inner_footer">
+		<ul>		
+			<li><a href="#back" ng-click="back()"><button type="submit" class="back">Back</button></a></li>
+			<li><a href="#logout" ng-click="logout()"><button type="submit" class="logout">Logout</button></a></li>
+		</ul>	
+		</footer>
+
+
