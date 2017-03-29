@@ -1,0 +1,28 @@
+.match {
+    width: 150px;
+    padding: 0;
+    margin-left: 100px;
+}
+
+    .match > li {
+        margin-bottom: 20px;
+        list-style: none;
+    }
+
+.linematchitem > li, .linematchplace > li {
+    background-color: #ededed;
+    height: 40px;
+    padding: 5px;
+}
+
+.left {
+    float: left;
+}
+.submit{
+width: 100px;
+    height: 30px;
+    top: 300px;
+    background-color: yellow;
+    position: absolute;
+
+}
